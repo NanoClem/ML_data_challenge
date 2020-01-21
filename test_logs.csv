@@ -1,0 +1,6 @@
+classifier,partitionning,normalizing,transformation,classifier_configs,column_predicted,accuracy,coherence
+K_Nearest_Neighbor,[70;30],,,{neighbors:2},income,0.785,0.264
+Decision_Tree,[80;20],,,,income,0.857,0.588
+Decision_Tree,[80;20],,[{type: 'OneToMany'; included: ['sex']}],,income,0.857,0.588
+Decision_Tree,[80;20],,[{type: 'ColumnFilter'; excluded: ['education.num'; 'fnlwgt']}],,income,0.86,0.597
+Decision_Tree,[80;20],,[{type: 'ColumnFilter'; excluded: ['education.num'; 'fnlwgt']}],,income,0.861,0.601
